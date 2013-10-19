@@ -1,0 +1,39 @@
+1. Design + template:
+   - Design ứng dụng: 8 hours: 1.000.000
+
+
+   - Đưa thiết kế template vào ung dung (header, footer, forms): 5
+hours - 600.000
+
+
+
+   - Đưa thiết kế của la bàn phong thủy vào ứng dụng (nội dung la bàn
+có thể thay đổi tùy theo năm sinh và giới tính) : 3 hours - 600.000
+
+
+
+
+
+
+2. Functions:
+   - Chức năng nhập năm sinh, giới tính: 2.5 hours - 400.000
+
+
+   - Chức năng dữ liệu trong la bàn phong thủy thay đổi dựa trên năm
+sinh và giới tính đã được nhập: 5 hours - 1.300.000
+
+   - Chức năng người dùng sử dụng điên thoại để định hướng thông qua
+la bàn: 5 hours - 1.500.000
+
+
+   - Chức năng hiện thị kết quả khi nhập năm sinh và giới tính trong
+la bàn phong thủy: 2.5 hours 500.000
+
+
+
+
+   - Chức năng lấy dữ liệu bất động sản từ web dựa trên hướng nhà và
+hiển thị: 4 hours - 1.000.000
+
+
+Tổng cộng: 35 hours - 6.900.000

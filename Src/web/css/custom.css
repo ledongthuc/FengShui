@@ -1,0 +1,66 @@
+#splash-screen {
+	background: url("../images/yin-yang.png") no-repeat center center;
+	background-size: 70%;
+}
+
+#home {
+	background: url("../images/yin-yang.png") no-repeat center bottom;
+	background-size: 30%;
+}
+
+#home .ui-field-contain label.ui-select{
+    width: 20%;
+    vertical-align: top;
+    margin: 0 2% 0 0;
+    display: inline-block;
+}
+
+#home .ui-field-contain .ui-select {
+    display: inline-block;
+    width: 78%;
+}
+
+#home .ui-field-contain .ui-controlgroup-label {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    vertical-align: top;
+    width: 20%;
+}
+
+#home .ui-field-contain .ui-controlgroup-controls {
+    display: inline-block;
+    width: 78%; 
+}
+
+#trigrams {
+	background: white url("../images/trigrams-doai.gif") no-repeat center center;
+	background-size: 90%; 
+}
+
+#trigrams .footer .right, #results .footer .right {
+	right: 5px;
+	top: 3px;
+	position: absolute;
+}
+
+#trigrams .footer .left, #results .footer .left {
+	left: 5px;
+	top: 3px;
+}
+
+#results .result-content .ui-grid-a {
+	margin: 10px 0px
+}
+
+#results .bds img.ui-li-thumb {
+	margin: 23px 0px 0px 5px
+}
+
+.ui-field-contain {
+	border-width: 0;
+}
+
+span.hot {
+    color: #F02D31;
+    font-weight: bold;
+}

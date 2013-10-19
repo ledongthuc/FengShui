@@ -1,0 +1,288 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Phong Thủy</title> 
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="css/fengshui.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+</head> 
+<body> 
+
+<!-- Splash Screen -->
+<div data-role="page" id="splash-screen" data-theme="a">
+</div>
+
+<!-- Home screen -->
+<div data-role="page" id="home" data-theme="c">
+
+	<div data-role="header" data-tap-toggle="false" data-id="myheader" id="header" data-position="fixed" data-theme="c">
+		<a href="#splash-screen" data-icon="home" data-iconpos="notext" data-corners="true" data-theme="b"></a>
+		<h1>Phong Thủy</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<legend>Giới tính:</legend>
+				
+				<input type="radio" name="sex" id="sex-male" value="1" checked="checked" data-mini="true" />
+				<label for="sex-male">Nam</label>
+				
+				<input type="radio" name="sex" id="sex-female" value="1" data-mini="true"/>
+				<label for="sex-female">Nữ</label>
+			</fieldset>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="year-of-birth">Năm sinh:</label>
+			
+			<select name="year-of-birth" id="year-of-birth" data-mini="true"
+					data-native-menu="false">
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+			</select>
+		</div>
+		<br/>
+		<input class="submit-button" type="button" value="Xem phong thủy" data-theme="b" />
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Trigrams Screen -->
+<div data-role="page" id="trigrams" data-theme="c">
+	
+	<div data-role="header" data-id="myheader" data-tap-toggle="false" id="header" data-position="fixed" data-theme="c">
+		<a href="#splash-screen" data-icon="home" data-iconpos="notext" data-corners="true" data-theme="b"></a>
+		<h1>La bàn bát quái</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content" id="trigrams-content">
+	</div>
+	
+	<div data-role="footer" data-tap-toggle="false" data-theme="c" data-position="fixed" class="footer">
+		<a href="#home" data-role="button" data-icon="arrow-l" class="left"  data-theme="b">
+		   Chỉnh thông tin
+		</a>
+		&nbsp;
+		<a href="#results" data-role="button" data-icon="arrow-r" class="right"  data-theme="f">
+			Xem kết quả
+		</a>
+	</div>
+</div>
+
+<!-- Result Screen -->
+<div data-role="page" id="results" data-theme="c">
+	
+	<div data-role="panel" id="index-panel" data-position="right" data-display="overlay">
+		<ul data-role="listview">
+			<li><a href="#">Thông tin chung</a></li>
+			<li><a href="#">Hướng tốt</a></li>
+			<li><a href="#">Lời khuyên</a></li>
+			<li><a href="#">Bất động sản hợp tuổi</a></li>
+		</ul>
+	</div><!-- /panel -->
+	
+	<div data-role="header" data-tap-toggle="false" data-id="myheader" id="header" data-position="fixed" data-theme="b">
+		<a href="#splash-screen" data-icon="home" data-iconpos="notext" data-corners="true"></a>
+		<h1>Kết quả</h1>
+		<a href="#index-panel" data-icon="bars" data-iconpos="notext" data-corners="true"></a>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		
+		<div data-role="collapsible" data-collapsed="false">
+			 <h3>Thông tin chung</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Năm sinh:</strong></div>
+				<div class="ui-block-b"><strong>1980</strong></div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Mệnh:</strong></div>
+				<div class="ui-block-b">Thạch Lựu Mộc</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Quẻ mệnh:</strong></div>
+				<div class="ui-block-b">Tốn Mộc</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Năm can chi:</strong></div>
+				<div class="ui-block-b">Canh Thân, thuộc Đông Tứ Mệnh.</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng tốt:</strong></div>
+				<div class="ui-block-b">Bắc, Nam, Đông, Đông Nam, các hướng còn lại đều là hướng xấu.</div>
+			</div>
+			
+			<p><strong>Hướng bạn chọn là Hướng Bắc:</strong> [Sinh Khí :: Sự dồi dào, hạnh phúc] Hướng cửa chính, các phòng quan trọng, hướng kê đầu giường.</p>
+		</div>
+		
+		<div data-role="collapsible" data-collapsed="false" data-theme="g">
+			 <h3>Hướng tốt</h3>
+			 
+			 <div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Bắc:</strong></div>
+				<div class="ui-block-b">[Sinh Khí :: Sự dồi dào, hạnh phúc] Hướng cửa chính, các phòng quan trọng, hướng kê đầu giường.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Nam:</strong></div>
+				<div class="ui-block-b">[Thiên Y :: Sức khỏe] Hướng phòng ngủ, kê đầu gường khi ốm.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Đông:</strong></div>
+				<div class="ui-block-b">[Diên Niên :: Sự hòa hợp] Vị trí tốt nhất cho phòng sinh hoạt chung.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Đông Nam:</strong></div>
+				<div class="ui-block-b">[Phục vị :: Cá nhân] Vị trí này hỗ trợ cho hoạt động suy nghĩ và nhận thức, chính là nơi đặt phòng làm việc.</div>
+			</div>
+			
+		</div>
+		
+		<div data-role="collapsible" data-collapsed="false" data-theme="h">
+			 <h3>Hướng xấu</h3>
+			 
+			 <div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Tây Bắc:</strong></div>
+				<div class="ui-block-b">[Hoạ Hại :: Bất hạnh] Ở nơi này mọi việc diễn biến không như dự định, phòng học không nên đặt ở đây.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Tây Nam:</strong></div>
+				<div class="ui-block-b">[Ngũ Quỷ :: Tranh cải] Nơi cấm kỵ của phòng sinh hoạt chung.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Tây:</strong></div>
+				<div class="ui-block-b">[Lục Sát :: Luật pháp &amp; Sức khỏe] Các phòng chính tránh đặt vị trí này.</div>
+			</div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><strong>Hướng Đông Bắc:</strong></div>
+				<div class="ui-block-b">[Tuyệt Mệnh :: Thảm họa] Hãy tránh hướng này, tại đây chỉ nên đặt nhà kho và nhà vệ sinh.</div>
+			</div>
+			
+		</div>
+		
+		<div data-role="collapsible" data-collapsed="false" data-theme="b">
+			 <h3>Lời khuyên</h3>
+			 
+			 <p>Nếu hai mảng nghiên cứu của phong thuỷ là dương trạch (phần phía trên mặt đất) và âm phần (phần phía dưới mặt đất) thì "Dương trạch tam yếu" (ba yếu tố quan trọng của Dương trạch) là cửa chính, phòng ngủ của chủ nhà và bếp nấu.</p>
+			 
+			 <div data-role="collapsible">
+			 	<h3>1. Cửa chính:</h3>
+			 	<p>Cửa chính là một yếu tố rất quan trọng tác động đến phong thuỷ. Quan niệm phong thuỷ cho rằng, "môn mệnh phải tương phối" (nghĩa là hướng cửa chính và mệnh của chủ nhà phải hợp với nhau, thì vượng khí mới tốt, gia chủ mới phát tài).<br/>Trường hợp của quý khách hoàn toàn thoả mãn Môn mệnh tương phối, nghĩa là hướng cửa chính rất lý tưởng.</p>
+			 </div>
+			 
+			 <div data-role="collapsible">
+			 	<h3>2. Bếp nấu:</h3>
+			 	<p>Bếp nấu cũng là một yếu tố rất quan trọng, vì mọi bệnh tật, vệ sinh đều sinh ra từ đây. Hướng bếp nên đặt ở hướng xấu, và nhìn về hướng tốt, theo quan niệm "Toạ hung hướng cát". Hướng bếp có thể hiểu là hướng cửa bếp đối với bếp lò, bếp dầu, hướng công tắc điều khiển đối với bếp điện, bếp gas.<br/><br/>
+					Trong trường hợp của quý khách, có thể đặt bếp như sau:<br/><br/>
+					Bếp đặt tại Tây Bắc và nhìn về Đông Nam, tức là tọa tại Hoạ Hại nhìn về Phục vị (bếp lành Phục vị).<br/><br/>
+					Bếp đặt tại Tây và nhìn về Đông, tức là tọa tại Lục Sát nhìn về Diên Niên (bếp lành Diên Niên).<br/><br/>
+					Ngoài ra, bếp nên tránh đặt gần chậu rửa, tủ lạnh, tránh có cửa sổ phía sau, tránh giáp các diện tường hướng Tây. Chậu rửa, cũng như khu phụ, được hiểu là nơi xả trôi nước, tức là xả trôi những điều không may mắn, nên đặt tại các hướng xấu. Cửa của bếp nấu không được để thẳng với cửa chính của nhà, hoặc nhìn thẳng vào cửa phòng ngủ, người nằm ngủ sẽ gặp tai ương tật ách.</p>
+			 </div>
+			 
+			 <div data-role="collapsible">
+			 	<h3>3. Phòng ngủ:</h3>
+			 	<p>Con người luôn giành 30% cuộc đời mình cho việc ngủ, nên phòng ngủ chiếm một vai trò đặc biệt quan trọng.<br/><br/>
+					Vị trí phòng ngủ trong nhà và vị trí giường ngủ trong phòng ngủ nên ưu tiên ở hướng tốt (các hướng Sinh Khí, Thiên Y, Diên Niên, Phục Vị)<br/><br/>
+					Chủ nhà thuộc hành Mộc, Thủy sinh Mộc, nên hướng giường nên quay về hướng thuộc Thủy hoặc Mộc<br/><br/>
+					Nếu tính cho các phòng ngủ của các thành viên khác trong gia đình, thì cần tính hành ứng với mỗi thành viên.<br/><br/>
+					Tủ quần áo nên kê tại các góc xấu trong phòng để trấn được cái xấu, là các góc Ngũ Quỷ, Hoạ Hại, Lục Sát, Tuyệt Mệnh.<br/><br/>
+					Giường ngủ cần tránh kê dưới dầm, xà ngang, đầu giường tránh thẳng với hướng cửa mở vào, thẳng với hướng gương soi.</p>
+			 </div>
+		</div>
+		
+		
+		<div data-role="collapsible" data-collapsed="false" data-theme="a" class="bds">
+			<h3>Bất động sản hợp tuổi</h3>
+			<ul data-role="listview" data-inset="false">
+				<li>
+					<a href="#">
+						<img class="ui-li-thumb" src="http://bdsthanglong.com/App_Files/052011/735659132852011_2.jpg" />
+						<h3 class="ui-li-heading">Bán nhà tại biệt thự xxx</h3>
+						<p class="ui-li-desc"><strong>Diện tích:</strong> 5 mét vuông.<br/> <strong>Giá:</strong> <span class="hot">7 tỷ</span>.<br/> <strong>Hướng:</strong> đông bắc - tây nam</p>
+					</a>  
+				</li>
+				<li>
+					<a href="#">
+						<img class="ui-li-thumb" src="http://file1.batdongsan.com.vn/file.297760.jpg" />
+						<h3 class="ui-li-heading">Bán nhà tại biệt thự xxx</h3>
+						<p class="ui-li-desc"><strong>Diện tích:</strong> 5 mét vuông.<br/> <strong>Giá:</strong> <span class="hot">7 tỷ</span>.<br/> <strong>Hướng:</strong> đông bắc - tây nam</p>
+					</a>  
+				</li>
+				<li>
+					<a href="#">
+						<img class="ui-li-thumb" src="http://bdsthanglong.com/App_Files/052011/735659132852011_2.jpg" />
+						<h3 class="ui-li-heading">Bán nhà tại biệt thự xxx</h3>
+						<p class="ui-li-desc"><strong>Diện tích:</strong> 5 mét vuông.<br/> <strong>Giá:</strong> <span class="hot">7 tỷ</span>.<br/> <strong>Hướng:</strong> đông bắc - tây nam</p>
+					</a>  
+				</li>
+				<li>
+					<a href="#">
+						<img class="ui-li-thumb" src="http://file1.batdongsan.com.vn/file.297760.jpg" />
+						<h3 class="ui-li-heading">Bán nhà tại biệt thự xxx</h3>
+						<p class="ui-li-desc"><strong>Diện tích:</strong> 5 mét vuông.<br/> <strong>Giá:</strong> <span class="hot">7 tỷ</span>.<br/> <strong>Hướng:</strong> đông bắc - tây nam</p>
+					</a>  
+				</li>
+				
+				<a href="#" data-role="button" data-theme="b">Xem thêm bất động sản khác</a>
+			</ul>
+		</div>
+			
+	</div>
+	
+	<div data-role="footer" data-tap-toggle="false" data-theme="b" data-position="fixed" class="footer">
+		<a href="#trigrams" data-role="button" data-icon="arrow-l" class="left">
+		   Quay lại la bàn
+		</a>
+		&nbsp;
+		<a href="#home" data-role="button" data-icon="arrow-r" class="right" data-theme="f">
+			Chỉnh thông tin
+		</a>
+	</div>
+</div>
+
+</body>
+</html>
