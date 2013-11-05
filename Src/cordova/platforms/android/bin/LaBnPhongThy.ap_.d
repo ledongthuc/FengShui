@@ -2,7 +2,6 @@
  : /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable-hdpi/icon.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable-hdpi/ic_home.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable-hdpi/splash.png \
-/media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable/splash_test.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable/icon.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/drawable/ic_home.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/res/xml/config.xml \
@@ -22,7 +21,6 @@
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable-hdpi/icon.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable-hdpi/ic_home.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable-hdpi/splash.png \
-/media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable/splash_test.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable/icon.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable/ic_home.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/bin/res/drawable-ldpi/icon.png \

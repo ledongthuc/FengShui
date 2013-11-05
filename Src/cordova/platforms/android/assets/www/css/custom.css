@@ -93,3 +93,7 @@ span.hot {
     color: #F02D31;
     font-weight: bold;
 }
+
+.ui-link {
+	text-decoration: none;
+}

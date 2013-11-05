@@ -72,11 +72,6 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 
 	var imageMargin = ( jQuery(document).height() / 2 ) - ( jQuery(document).width() / 2 ) - 7;
 	jQuery("#trigrams-image").attr("src", "images/trigrams/" + trigram[0])
-				 .css('-webkit-transform', 'rotate(70deg)')
-				 .css('-moz-transform', 'rotate(70deg)')
-			   	 .css('-ms-transform', 'rotate(70deg)')
-			   	 .css('-o-transform', 'rotate(70deg)')
-			   	 .css('transform', 'rotate(70deg)')
 				 .css('margin-top', imageMargin);
 	startWatch();
 });
@@ -87,7 +82,7 @@ function startWatch() {
 
 	watchID = navigator.compass.watchHeading(function(heading) {
 
-		/*if( currentHeading - heading.magneticHeading > 270 ) {
+		if( currentHeading - heading.magneticHeading > 270 ) {
 			
 			jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
 								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
@@ -116,13 +111,7 @@ function startWatch() {
 							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
-		}*/
-
-		jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
+		}
 
 		currentHeading = heading.magneticHeading;
 
