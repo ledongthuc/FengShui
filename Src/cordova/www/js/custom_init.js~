@@ -1,0 +1,57 @@
+/* database column */
+var fengshui_column_age = "age";
+var fengshui_column_sex = "sex";
+var fengshui_column_direction = "direction";
+
+
+/* static data column */
+var fengshui_male = 1;
+var fengshui_female = 0;
+
+var fengshui_north = 0; //bac
+var fengshui_northeast = 1; //dong bac
+var fengshui_east = 2; //dong
+var fengshui_southeast = 3; //dong nam
+var fengshui_south = 4; //nam
+var fengshui_southwest = 5; //tay nam
+var fengshui_west = 6; //tay
+var fengshui_northwest = 7; //tay nam
+
+var fengshui_data_cungphi_kham = new Array("Kham.png", 
+					   "Đông Nam, Đông, Nam, Bắc, các hướng còn lại đều là hướng xấu.",
+					   new Array(3, "[Sinh Khí :: Sự dồi dào, hạnh phúc] Hướng cửa chính, các phòng quan trọng, hướng kê đầu giường.",
+						     2, "[Thiên Y :: Sức khỏe] Hướng phòng ngủ, kê đầu gường khi ốm.",
+						     4, "[Diên Niên :: Sự hòa hợp] Vị trí tốt nhất cho phòng sinh hoạt chung.",
+						     0, "[Phục vị :: Cá nhân] Vị trí này hỗ trợ cho hoạt động suy nghĩ và nhận thức, chính là nơi đặt phòng làm việc."),
+					   new Array(6, "[Hoạ Hại :: Bất hạnh] Ở nơi này mọi việc diễn biến không như dự định, phòng học không nên đặt ở đây.") );
+var fengshui_data_cungphi_ly = new Array("Ly.png");
+var fengshui_data_cungphi_cans = new Array("Cans.png");
+var fengshui_data_cungphi_doai = new Array("Doai.png");
+var fengshui_data_cungphi_can = new Array("Can.png");
+var fengshui_data_cungphi_khon = new Array("Khon.png");
+var fengshui_data_cungphi_ton = new Array("Ton.png");
+var fengshui_data_cungphi_chan = new Array("Chan.png");
+
+var fengshui_data_cungphi_male = new Array(
+	fengshui_data_cungphi_khon, //0
+	fengshui_data_cungphi_kham, //1
+	fengshui_data_cungphi_ly, //2
+	fengshui_data_cungphi_cans, //3
+	fengshui_data_cungphi_doai, //4
+	fengshui_data_cungphi_can, //5
+	fengshui_data_cungphi_khon, //6
+	fengshui_data_cungphi_ton, //7
+	fengshui_data_cungphi_chan //8
+);
+
+var fengshui_data_cungphi_female = new Array(
+	fengshui_data_cungphi_ton, //0	
+	fengshui_data_cungphi_cans, //1	
+	fengshui_data_cungphi_can, //2
+	fengshui_data_cungphi_doai, //3
+	fengshui_data_cungphi_cans, //4	
+	fengshui_data_cungphi_ly, //5
+	fengshui_data_cungphi_kham, //6
+	fengshui_data_cungphi_khon, //7
+	fengshui_data_cungphi_chan //8
+);

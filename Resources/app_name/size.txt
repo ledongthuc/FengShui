@@ -1,0 +1,5 @@
+ldpi: 160
+mdpi: 320
+hdpi: 480
+xhdpi: 640
+xxhdpi: 960

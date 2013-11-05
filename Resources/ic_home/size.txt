@@ -1,0 +1,5 @@
+ldpi: 19
+mdpi: 38
+hdpi: 57
+xhdpi: 76
+xxhdpi: 114
