@@ -6,6 +6,7 @@
 $.mobile.pageContainer = $('#container');
 $.mobile.defaultDialogTransition = "none";
 $.mobile.defaultPageTransition = "none";
+$.mobile.buttonMarkup.hoverDelay = 0;
 
 
 /* Phone Gap */
@@ -52,7 +53,7 @@ jQuery( "#submit_home" ).on( "tap", function( event ) {
 } );
 
 function load_age() {
-	for(i = 1920; i < 2000; i++){
+	for(i = 1930; i <= 2000; i++){
 		$('<option>').val(i).text(i).appendTo('#year-of-birth');
 	} 
 }
@@ -157,7 +158,23 @@ jQuery( "#results" ).on( "pagebeforeshow", function( event ) {
 	jQuery( "#result_lucsat" ).html( getDirectionName(trigram[7]) );
 	jQuery( "#result_tuyetmenh" ).html( getDirectionName(trigram[8]) );
 	
+	jQuery( "#result_canchimenh" ).html( trigram[9] );
+	
 	setChoiceDirection(direction, trigram)
+
+	for(i = 0; i < fengshui_menhcung.length; i++) {
+		if(fengshui_menhcung[i][0] === age) {
+			
+			jQuery( "#result_menh" ).html(fengshui_menhcung[i][2]);
+			if( sex == "true" ) {
+				jQuery( "#result_quemenh" ).html(fengshui_menhcung[i][3]);
+			} else {
+				jQuery( "#result_quemenh" ).html(fengshui_menhcung[i][4]);
+			}
+			jQuery( "#result_canchi" ).html(fengshui_menhcung[i][1]);
+			
+		}
+	}
 });
 
 function setChoiceDirection(direction, trigram) {

@@ -44,41 +44,7 @@
 			<div data-role="fieldcontain">
 				<label for="year-of-birth">Năm sinh:</label>
 				
-				<select name="year-of-birth" id="year-of-birth" data-mini="true">
-					
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-					<option value="1980">1980</option>
-					<option value="1981">1981</option>
-					<option value="1982">1982</option>
-					<option value="1983">1983</option>
-				</select>
+				<select name="year-of-birth" id="year-of-birth" data-mini="true"></select>
 			</div>
 			<br/>
 			<a href="#trigrams">
@@ -106,7 +72,7 @@
 		<div data-role="footer" data-tap-toggle="false" data-theme="c" data-position="fixed" class="footer">
 			<a 
 				href="#home" data-role="button" data-icon="arrow-l" 
-				class="left"  data-theme="b" data-direction="reverse">
+				class="left"  data-theme="b" data-direction="reverse" id="trigrams_back">
 			   Chỉnh thông tin
 			</a>
 			&nbsp;
@@ -134,15 +100,15 @@
 				</div>
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><strong>Mệnh:</strong></div>
-					<div class="ui-block-b"></div>
+					<div class="ui-block-b"><span id="result_menh"></span></div>
 				</div>
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><strong>Quẻ mệnh:</strong></div>
-					<div class="ui-block-b"></div>
+					<div class="ui-block-b"><span id="result_quemenh"></span></div>
 				</div>
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><strong>Năm can chi:</strong></div>
-					<div class="ui-block-b"></div>
+					<div class="ui-block-b"><span id="result_canchi"></span> thuộc <span id="result_canchimenh"></span></div>
 				</div>
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><strong>Hướng tốt:</strong></div>
