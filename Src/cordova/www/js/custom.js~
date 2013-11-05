@@ -83,11 +83,11 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 
 function startWatch() {
 
-	var options = { frequency: 500 };
+	var options = { frequency: 50 };
 
 	watchID = navigator.compass.watchHeading(function(heading) {
 
-		if( currentHeading - heading.magneticHeading > 270 ) {
+		/*if( currentHeading - heading.magneticHeading > 270 ) {
 			
 			jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
 								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
@@ -116,7 +116,13 @@ function startWatch() {
 							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
-		}
+		}*/
+
+		jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 'deg)')
+								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 'deg)')
+							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
+							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
+							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
 
 		currentHeading = heading.magneticHeading;
 
@@ -254,7 +260,3 @@ function getDirectionName (directionId) {
 		  	return "Bắc";
 	}
 }
-
-$( document ).ready(function() {
-		alert(document.getElementById("resultsContent").clientHeight);	
-});

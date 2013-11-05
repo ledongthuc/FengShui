@@ -67,8 +67,8 @@ body {
 	width: 85%;
 	display: block;
 	margin: 7% auto auto;
-	transition:all 0.1s;
-	-webkit-transition:all 0.1s; /* Safari */
+	transition:all 0.4s;
+	-webkit-transition:all 0.4s; /* Safari */
 }
 
 #results .result-content .ui-grid-a {
