@@ -71,6 +71,11 @@ body {
 	-webkit-transition:all 0.4s; /* Safari */
 }
 
+#trigrams-content {
+	background: url('../images/up.png') no-repeat top center;
+	background-size: 10% 10%;
+}
+
 #results .result-content .ui-grid-a {
 	margin: 10px 0px
 }

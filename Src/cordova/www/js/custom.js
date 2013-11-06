@@ -79,6 +79,8 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 
 function startWatch() {
 
+	if( navigator.compass == null ) return;
+
 	var options = { frequency: 50 };
 
 	watchID = navigator.compass.watchHeading(function(heading) {
