@@ -79,42 +79,15 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 
 function startWatch() {
 
-	if( navigator.compass == null ) return;
-
-	var options = { frequency: 50 };
+	var options = { frequency: 5 };
 
 	watchID = navigator.compass.watchHeading(function(heading) {
 
-		if( currentHeading - heading.magneticHeading > 270 ) {
-			
-			jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
-								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
-							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
-							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)')
-							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 360 + 'deg)');
-			
-			var transitionTemp = jQuery("#trigrams-image").css('transition');
-			jQuery("#trigrams-image").css('transition', 'all 0 ease 0')
-						 			 .css('-webkit-transition', 'all 0 ease 0');
-
-			jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 'deg)')
+		jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
 							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
-
-			jQuery("#trigrams-image").css('transition', transitionTemp)
-						 			 .css('-webkit-transition', transitionTemp);
-			
-
-		} else {
-
-			jQuery("#trigrams-image").css('-webkit-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-								 	 .css('-moz-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('-ms-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('-o-transform', 'rotate(' + heading.magneticHeading + 'deg)')
-							   	 	 .css('transform', 'rotate(' + heading.magneticHeading + 'deg)');
-		}
 
 		currentHeading = heading.magneticHeading;
 
@@ -135,7 +108,8 @@ jQuery( "#trigrams" ).on( "pagebeforehide", function( event ) {
 
 /* Results */
 jQuery( "#results" ).on( "pagebeforeshow", function( event ) {
-	var direction = Math.floor( ( currentHeading + 22.5 ) * 8 / 360 );
+	// 359.99 - ( currentHeading + 22.5 ) => reverse
+	var direction = Math.floor( ( 359.99 - ( currentHeading + 22.5 ) ) * 8 / 360 );
 	var age = window.localStorage.getItem(fengshui_column_age);
 	var sex = window.localStorage.getItem(fengshui_column_sex);
 

@@ -67,8 +67,8 @@ body {
 	width: 85%;
 	display: block;
 	margin: 7% auto auto;
-	transition:all 0.4s;
-	-webkit-transition:all 0.4s; /* Safari */
+	/*transition:all 2s;
+	-webkit-transition:all 2s; /* Safari */
 }
 
 #trigrams-content {
