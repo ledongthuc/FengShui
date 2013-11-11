@@ -147,6 +147,7 @@
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/bg.gif \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/trigrams \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/logo.png \
+/media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/up.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/yin-yang.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/splash.png \
 /media/Data/Project/Unsuccess/FengShui/Src/cordova/platforms/android/assets/www/images/trigrams/Khon.png \

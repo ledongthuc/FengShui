@@ -79,7 +79,7 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 
 function startWatch() {
 
-	var options = { frequency: 5 };
+	var options = { frequency: 3 };
 
 	watchID = navigator.compass.watchHeading(function(heading) {
 
@@ -109,7 +109,11 @@ jQuery( "#trigrams" ).on( "pagebeforehide", function( event ) {
 /* Results */
 jQuery( "#results" ).on( "pagebeforeshow", function( event ) {
 	// 359.99 - ( currentHeading + 22.5 ) => reverse
-	var direction = Math.floor( ( 359.99 - ( currentHeading + 22.5 ) ) * 8 / 360 );
+	var direction = Math.floor( ( currentHeading + 22.5 ) * 8 / 360 );
+	
+	// Reverse value
+	direction = ( 8 - direction ) % 8;
+	
 	var age = window.localStorage.getItem(fengshui_column_age);
 	var sex = window.localStorage.getItem(fengshui_column_sex);
 
