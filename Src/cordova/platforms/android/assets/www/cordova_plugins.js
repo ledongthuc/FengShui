@@ -28,5 +28,12 @@ module.exports = [
             "navigator.compass"
         ]
     }
-]
+];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "org.apache.cordova.splashscreen": "1.0.0",
+    "org.apache.cordova.device-orientation": "0.3.11"
+}
+// BOTTOM OF METADATA
 });
