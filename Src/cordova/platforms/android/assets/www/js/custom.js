@@ -77,6 +77,7 @@ jQuery( "#trigrams" ).on( "pagebeforeshow", function( event ) {
 	startWatch();
 });
 
+var isShowError = false;
 function startWatch() {
 
 	var options = { frequency: 3 };
@@ -91,7 +92,13 @@ function startWatch() {
 
 		currentHeading = heading.magneticHeading;
 
-	}, function(compassError) {	}, options);
+	}, function(compassError) {
+		if(isShowError) {
+			return;
+		}
+		isShowError = true;
+		alert("Điện thoại của bạn không hỗ trợ la bàn.");
+	}, options);
 }
 
 function stopWatch() {
